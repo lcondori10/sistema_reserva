@@ -20,6 +20,6 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cliente/', include('sistema_reserva.app.cliente.urls')),
-   # path('catalogo/', include('sistema_reserva.app.catalogo.urls')),
-   # path('inicio/', include('sistema_reserva.app.inicio.urls')),
+    path('catalogo/', include('sistema_reserva.app.catalogo.urls')),
+    path('inicio/', include('sistema_reserva.app.inicio.urls')),
 ]
